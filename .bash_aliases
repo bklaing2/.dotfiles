@@ -1,0 +1,6 @@
+alias tm="tmux"
+alias :q="exit"
+alias rmr="rm -rf"
+alias nvimc="cd ${XDG_CONFIG_HOME:-$HOME/.config}/nvim"
+alias tmuxc="cd ${XDG_CONFIG_HOME:-$HOME/.config}/tmux"
+alias source="source $HOME/.bashrc && echo -e '\n  Config reloaded!\n'"

@@ -1,0 +1,25 @@
+[core]
+	excludesfile = /home/datacite/.gitignore_global
+	editor = nvim
+[push]
+	autoSetupRemote = true
+[branch]
+	autoSetupMerge = simple
+[user]
+	name = Bryceson Laing
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[init]
+	defaultBranch = main
+[color]
+	ui = true
+[alias]
+	co = checkout
+	c = commit -m
+	ca = commit --amend --no-edit
+	b = branch
+	s = status
+[fetch]
+	prune = true
