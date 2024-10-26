@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /home/datacite/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = nvim
 [push]
 	autoSetupRemote = true
