@@ -4,7 +4,7 @@ set -e
 
 
 DOTFILES="$(pwd)"
-EXCLUDE_FILES=("install.sh" "install.local.sh" "README" ".git" ".gitignore" "Brewfile")
+EXCLUDE_FILES=("install.sh" "install.local.sh" "README.md" ".git" ".gitignore" "Brewfile")
 
 
 files() { entries "$1" "-type f"; }
@@ -77,8 +77,12 @@ link_entry() {
     filename="$(basename "$1")"
     target="$HOME/$2/$filename"
 
-    rm -f "$target"
     echo "$2/$filename"
+    if [ -f "$target" ]; then
+        rm -f "$target"
+    elif [ -d "$target" ]; then
+        rm -rf "$target"
+    fi
     ln -s "$1" "$target"
 }
 
