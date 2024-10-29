@@ -25,3 +25,6 @@ map('n', '<leader>|', '<C-w><C-v>', { desc = 'Split window vertically' })
 
 map('n', 'ds', 'd0i<BS><Esc>', { desc = 'Select entire buffer' })
 map('v', '<S-a>', '<Esc>gg0vG$', { desc = 'Select entire buffer' })
+
+map('n', '<leader>dvo', '<cmd>DiffviewOpen<CR>', { desc = '[D]iff [V]iew [O]pen' })
+map('n', '<leader>dvc', '<cmd>DiffviewClose<CR>', { desc = '[D]iff [V]iew [C]lose' })
