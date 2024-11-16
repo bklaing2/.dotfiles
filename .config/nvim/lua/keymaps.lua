@@ -16,6 +16,8 @@ map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]ui
 -- or just use <C-\><C-n> to exit terminal mode
 map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
+map('n', '<leader>-', '<C-6>', { desc = 'Move focus to the left window' })
+
 map('n', '<leader><Left>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 map('n', '<leader><Right>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 map('n', '<leader><Down>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })

@@ -17,9 +17,13 @@
 	ui = true
 [alias]
 	co = checkout
+	unadd = restore
 	c = commit -m
 	ca = commit --amend --no-edit
+	uncommit = reset HEAD~1
+	uc = uncommit
 	b = branch
+	brn = branch -m
 	s = status
 [fetch]
 	prune = true
