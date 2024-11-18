@@ -1,4 +1,5 @@
 alias tm="tmux"
+alias tmn="tmux new -s ${PWD##*/}"
 alias :q="exit"
 alias rmr="rm -rf"
 alias nvimc="cd ${XDG_CONFIG_HOME:-$HOME/.config}/nvim"
